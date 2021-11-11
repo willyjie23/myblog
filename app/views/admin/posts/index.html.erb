@@ -1,0 +1,7 @@
+<%= link_to '新增文章', new_admin_post_path %>
+<br>
+<% @posts.each do |p| %>
+  <%= link_to p.title, admin_post_path(p) %>
+  <%= link_to '編輯', edit_admin_post_path(p) %>
+  <%= button_to "delete image", admin_post_path(p), method: :delete, class: 'inline-block' %>
+<% end %>

@@ -48,6 +48,11 @@ gem "bootsnap", ">= 1.4.4", require: false
 # https://stackoverflow.com/questions/69229112/error-when-trying-to-install-devise-in-ruby-on-rails-7-0-0
 gem "devise", git: "https://github.com/heartcombo/devise", branch: "main"
 
+gem "simple_form", "~> 5.0.2"
+gem "simple_form-tailwind"
+gem "simple_form_tailwind_css"
+gem "heroicon"
+
 group :development, :test do
   # Start debugger with binding.b [https://github.com/ruby/debug]
   gem "debug", ">= 1.0.0", platforms: %i[ mri mingw x64_mingw ]

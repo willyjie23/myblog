@@ -1,0 +1,19 @@
+<%= simple_form_for([:admin, post], builder: SimpleForm::Tailwind::FormBuilder) do |f| %>
+  <div class="flex items-center justify-center">
+    <div class="grid bg-white rounded-lg shadow-xl w-11/12 md:w-9/12">
+
+      <div class="grid grid-cols-1 mt-5 mx-7">
+        <%= f.input :title %>
+      </div>
+
+      <div class="grid grid-cols-1 mt-5 mx-7 row-span-5">
+        <%= f.input :content %>
+      </div>
+
+
+      <div class='flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5'>
+        <%= f.button :submit, class: "w-auto bg-purple-500 hover:bg-purple-700 rounded-lg shadow-xl font-medium text-white px-4 py-2" %>
+      </div>
+    </div>
+  </div>
+<% end %>
